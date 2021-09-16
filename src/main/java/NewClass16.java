@@ -9,7 +9,6 @@
  * @author itlabs
  */
 public class NewClass16 {
-    
     private boolean isPrime(int n){
         for(int i=2; i<n; i++){
             if(n%i == 0) return false;
@@ -17,12 +16,25 @@ public class NewClass16 {
         }
         return true;
     }
+    
+    int getPrimeSum(int[] nums){
+        int sum=0;
+        for(int i=0; i<nums.length; i++){
+            if(isPrime(nums[i])){
+                sum+=nums[i];
+            }
+        }
+        
+        return 0;
+        
+    }
     public static void main(String[] args){
         NewClass16 nc= new NewClass16();
-        int x= 10;
-        System.out.println("Number " +x+ "is" + (
-        nc.isPrime(x)?"": "not a"
-                )+ "prime" );
+        int[] arr ={3,4,8,7,9,10,12,5};
+        int sum=nc.getPrimeSum(arr);
+        
+        System.out.println("The sum of the prime in the array is "+ sum );
+    
         
         
     }
