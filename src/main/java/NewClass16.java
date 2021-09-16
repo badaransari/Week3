@@ -1,3 +1,6 @@
+
+import java.io.FileNotFoundException;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -28,6 +31,19 @@ public class NewClass16 {
         return 0;
         
     }
+    int [] getArrayFromFile(String fl) throws FileNotFoundException{
+      Scanner sc= new Scanner (new File(fl));
+        while(sc.hasNext()){
+            
+        }
+        int[] arr= new int[10];
+        return arr;
+        
+    }
+            
+            
+            
+            
     public static void main(String[] args){
         NewClass16 nc= new NewClass16();
         int[] arr ={3,4,8,7,9,10,12,5};
